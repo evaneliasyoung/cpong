@@ -30,6 +30,7 @@
 #include <stdbool.h>
 #include <stdint.h>
 #include <math.h>
+#include <time.h>
 
 #ifdef _WIN32
 #include <Windows.h>
