@@ -4,7 +4,7 @@
 *
 *  @author    Evan Elias Young
 *  @date      2019-05-14
-*  @date      2019-05-15
+*  @date      2019-05-16
 *  @copyright Copyright 2019 Evan Elias Young. All rights reserved.
 */
 
@@ -38,4 +38,8 @@ extern float vel_x;
 extern float vel_y;
 
 void init_game();
+void bot_move();
+void ball_reset();
+void ball_move();
+void ball_physics();
 void tick();
