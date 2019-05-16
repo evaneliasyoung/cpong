@@ -4,26 +4,13 @@
 *
 *  @author    Evan Elias Young
 *  @date      2019-05-14
-*  @date      2019-05-14
+*  @date      2019-05-16
 *  @copyright Copyright 2019 Evan Elias Young. All rights reserved.
 */
 
 #include "pch.h"
 
 // Global Variables
-extern const unsigned int SCREEN_WIDTH;
-extern const unsigned int SCREEN_HEIGHT;
-extern const unsigned char PADDLE_SPEED;
-extern const unsigned int PLAYER_X;
-extern const unsigned int BOT_X;
-extern const unsigned char PADDLE_WIDTH;
-extern const unsigned char PADDLE_HEIGHT;
-extern const unsigned char BALL_WIDTH;
-extern const unsigned char BALL_HEIGHT;
-extern const unsigned char BALL_SPEED;
-extern const float BOT_SPEED_MOD;
-extern const unsigned char MAX_BOUNCE_ANGLE;
-
 extern SDL_Window *window;
 extern SDL_Renderer *renderer;
 extern SDL_Event e;
