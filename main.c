@@ -45,6 +45,7 @@ int main(int argc, char *argv[])
       tick();
     }
   }
+  closing();
 
   return 0;
 }
