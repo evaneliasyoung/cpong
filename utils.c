@@ -4,7 +4,7 @@
 *
 *  @author    Evan Elias Young
 *  @date      2019-05-14
-*  @date      2019-05-15
+*  @date      2019-05-16
 *  @copyright Copyright 2019 Evan Elias Young. All rights reserved.
 */
 
@@ -12,11 +12,6 @@
 #include "utils.h"
 
 int clamp(const int n, const int min, const int max)
-{
-  return n < min ? min : n > max ? max : n;
-}
-
-float flclamp(const float n, const float min, const float max)
 {
   return n < min ? min : n > max ? max : n;
 }

@@ -25,7 +25,6 @@ extern float vel_x;
 extern float vel_y;
 
 int clamp(const int n, const int min, const int max);
-float flclamp(const float n, const float min, const float max);
 void log_sdl(const char msg[]);
 bool init_sdl();
 void closing();

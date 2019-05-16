@@ -56,7 +56,7 @@ void bot_move()
 
   bot_move = (goal_mid - bot_mid < 0 ? -1 : 1) * PADDLE_SPEED * BOT_SPEED_MOD;
 
-  bot_y = round(flclamp((float)bot_y + bot_move, (float)0, (float)SCREEN_HEIGHT - PADDLE_HEIGHT));
+  bot_y = clamp(round((float)bot_y + bot_move), 0, SCREEN_HEIGHT - PADDLE_HEIGHT);
 }
 
 void ball_reset()
