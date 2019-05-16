@@ -135,12 +135,9 @@ void draw_score(bool isPlayer, const unsigned char score)
 
 void draw_net()
 {
-  SDL_Rect rect = {376, 0, 4, 8};
-
   for (size_t i = 0; i < 31; ++i)
   {
-    rect.y = 88 + (2 * i * 8);
-    SDL_RenderFillRect(renderer, &rect);
+    draw_rect(376, 88 + (2 * i * 8), 4, 8);
   }
 }
 
