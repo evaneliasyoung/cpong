@@ -4,7 +4,7 @@
 *
 *  @author    Evan Elias Young
 *  @date      2019-05-14
-*  @date      2019-05-15
+*  @date      2019-05-16
 *  @copyright Copyright 2019 Evan Elias Young. All rights reserved.
 */
 
@@ -135,27 +135,20 @@ void draw_score(bool isPlayer, const unsigned char score)
 
 void draw_net()
 {
-  SDL_Rect rect = {376, 0, 4, 8};
-
   for (size_t i = 0; i < 31; ++i)
   {
-    rect.y = 88 + (2 * i * 8);
-    SDL_RenderFillRect(renderer, &rect);
+    draw_rect(376, 88 + (2 * i * 8), 4, 8);
   }
 }
 
 void draw_ball()
 {
-  SDL_Rect rect = {round(ball_x), round(ball_y), BALL_WIDTH, BALL_HEIGHT};
-
-  SDL_RenderFillRect(renderer, &rect);
+  draw_rect(round(ball_x), round(ball_y), BALL_WIDTH, BALL_HEIGHT);
 }
 
 void draw_paddle(const unsigned int x, const unsigned int y)
 {
-  SDL_Rect rect = {x, y, PADDLE_WIDTH, PADDLE_HEIGHT};
-
-  SDL_RenderFillRect(renderer, &rect);
+  draw_rect(x, y, PADDLE_WIDTH, PADDLE_HEIGHT);
 }
 
 void draw_scan()
