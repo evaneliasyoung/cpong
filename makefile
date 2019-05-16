@@ -7,7 +7,7 @@ OBJECTS = main.o utils.o draw.o game.o
 default: cpong.exe
 
 %.gch: %.h
-	$(CC) $(FLAGS) -c %< -o $@ $(POSTS)
+	$(CC) $(FLAGS) -c $< -o $@ $(POSTS)
 
 %.o: %.c $(HEADERS)
 	$(CC) $(FLAGS) -c $< -o $@ $(POSTS)
